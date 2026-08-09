@@ -251,7 +251,10 @@ while True:
                     .handedness[idx][0]
                     .category_name
                 )
-
+                if hand_label == "Left":
+                    hand_label = "Right"
+                else:
+                    hand_label = "Left"
             else:
 
                 hand_label = "Unknown"
